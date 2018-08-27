@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>backend game</title>
+
+</head>
+<body>
+	<div>
+		<h1><a href="/">Django</a></h1>
+	</div>
+	{%for i in posts %}
+	<div>
+		<p>published:{{Post.published_date}} </p>
+		<h1><a href="">{{Post.title}}</a></h1>
+		<p>{{Post.text|linebreaksbr}}</p>
+	</div>
+    {%end for%}
+</body>
+</html>
